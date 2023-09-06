@@ -7,7 +7,7 @@
 
 div#container{
     background-color: rgb(255, 255, 255);
-    height: 1200px;
+    height: 1900px;
 }
 
 /*-------- header ----------*/
@@ -128,7 +128,7 @@ a:hover{
     border-radius: 0px 4px 4px 0px;
 }
 
-#b2 div{
+#b2 .background-image{
     width: 69%;
     height: 100%;
     background-color: rgb(38, 38, 38);
@@ -137,11 +137,7 @@ a:hover{
     background-image: url(/img/sapatoysl.jpg);
     background-size: cover;
     background-position: center;
-}
-
-#b2 div img {
-    width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
 }
 
 #b3{
@@ -161,7 +157,29 @@ a:hover{
     background-color: rgb(69, 69, 69);
     justify-self: start;
     border-radius: 4px;
+    background-image: url(/img/Louis-Vuitton-Summer-2022-Capsule-Collection.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
+#texto-inv{
+    position: absolute;
+    top: 495px;
+    left: 300px;
+    width: 33% !important;
+    height: 460px !important;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgb(171, 171, 171,0.0) !important;
+    backdrop-filter: blur(10px);
+}
+
+#b2 div:hover #texto-inv{
+    opacity: 1;
+}
+
+
 
 
 
@@ -178,3 +196,19 @@ a:hover{
     color: white;
     cursor: pointer;
 }
+
+#produtos-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    padding-left:300px;
+    padding-right:300px;
+    gap: 20px;
+}
+
+#produtos-grid div{
+    background-color: blue;
+}
+
