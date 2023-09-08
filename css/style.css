@@ -15,8 +15,9 @@ div#container{
 header{
     width: 100%;
     margin: auto;
-    background-color: rgba(220, 220, 220, 0.9);
+    background-color: rgba(191, 191, 191, 1);
     position:fixed; 
+    z-index: 2;
 }
 
 #nav01{
@@ -118,7 +119,7 @@ a:hover{
 }
 
 #b2 {
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -141,7 +142,7 @@ a:hover{
 }
 
 #b3{
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -199,16 +200,35 @@ a:hover{
 
 #produtos-grid{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 100%;
-    height: 400px;
-    background-color: black;
-    padding-left:300px;
-    padding-right:300px;
-    gap: 20px;
+    height: auto;
+    background-color: #ffffff;
+    justify-items: center;
 }
 
-#produtos-grid div{
-    background-color: blue;
+#produtos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    background-color: #ffffff;
+    height: auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#produtos div{
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#produtos div img{
+    border-radius: 20px;
+    width: 100%;
+    height: 65%;
+}
+
+#produtos div figcaption{
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
 }
 
